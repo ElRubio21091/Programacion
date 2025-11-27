@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 2</title>
+
+  <style>
+    /* --- Estilos dentro del HTML --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    header {
+      position: fixed;
+      /* Se queda arriba aunque hagas scroll */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      /* 👈 separación entre los enlaces */
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      margin-top: 120px;
+      /* Espacio para que el contenido no quede debajo del menú */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dragon Ball Super: Broly</h1>
+    <nav>
+      <a href="Practica2Menu.html">Inici</a>
+      <a href="Practica2Director.html">Director</a>
+      <a href="Practica2Personajes.html">Personajes</a>
+      <a href="Practica2CinemesStreaming.html">Cinemes/Streaming</a>
+      <a href="Practica2opinion.html">Opinion</a>
+      <a href="Practica2Media.html">Media</a>
+      <a href="Practica2NDP.html">Niveles de poder</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="margin-bottom: 20px;">¿Que son los niveles de poder?</h1>
+    <p style="margin-bottom: 10px;">Los niveles de poder generalmente se utilizan para medir la fuerza de cada personaje y así poder comparar su fuerza. Generalmente, un personaje con más nivel de poder no significa que pueda perder contra otro con menos, ya que las habilidades del personaje juegan un rol importante en las peleas.
+    </p>
+    <h2 style="margin-bottom: 10px;">Tierlist de niveles de poder</h2>
+    <figure style="margin-bottom: 20px;" style="margin-top: 20px;">
+        <img src="./tierlist.png" alt="Tierlist">
+        <figcaption> Niveles de poder.</figcaption>
+    </figure>
+    <h1 style="margin-bottom: 20px;">¿Por que estan estos personajes ordenados así?</h1>
+    <h2 style="margin-bottom: 10px;">Goku forma base</h2>
+    <p style="margin-bottom: 10px;">Goku requiere de sus transformaciones para volverse más fuerte, en su estado base se puede ver claramente en la película como es superior a Broly en un inicio, pero ràpidamente se ve superado con el rápido crecimiento de fuerza de Broly y se ve forzado a transformarse. Cabe resaltar que durante la película se puede considerar a Vegeta como un igual a Goku en nivel de poder, pero Goku tiene la ventaja en términos de habilidades.</p>
+    <h2 style="margin-bottom: 10px;">Goku super sayan</h2>
+    <p style="margin-bottom: 10px;">Goku en su fase super sayan es 50 veces más fuerte que antes, cosa que aunque parezca mucho no es tanto cuando tu rival es un sayan con la capacidad de crecer en fuerza de forma ilimitada y exponencial a lo largo que pelea. </p>
+    <h2 style="margin-bottom: 10px;">Goku super sayan god</h2>
+    <p style="margin-bottom: 10px;"> Goku es su fase god iguala la fuerza de broly enfurecido momentaneamente, siendo capaz de incluso mantenerlo paralizado unos instantes. Desgraciadamente Broly sigue aumentando de fuerza y supera a Goku de nuevo. </p>
+    <h2 style="margin-bottom: 10px;">Goku super sayan blue</h2>
+    <p style="margin-bottom: 10px;"> La fase blue de Goku es la fase más fuerte que posee en esos momentos. Su fuerza es suficiente para superar a un Broly enfurecido y darle un poco de pelea al Broly super sayan junto a Vegeta</p>
+    <h2 style="margin-bottom: 10px;">Vegeta</h2>
+    <p style="margin-bottom: 10px;"> Todas las fases de Vegeta están a la par con Goku pero, como antes he mencionado, Goku tiene una ligera ventaja en tecnicas.</p>
+    <h2 style="margin-bottom: 10px;">Cheelai</h2>
+    <p style="margin-bottom: 10px;"> No és una guerrera, su arma de fuego es la única forma que tiene de defenderse y en Dragon ball eso no es nada.</p>
+    <h2 style="margin-bottom: 10px;">Broly base</h2>
+    <p style="margin-bottom: 10px;"> Broly es el personaje con más diferencia de fuerza entre forma y forma que hay en toda la película. Esto se debe a que su poder aumenta exponencialmente a medida que va perdiendo el control de si mismo. En su forma base a penas puede darle pelea a un Vegeta base. </p>
+    <h2 style="margin-bottom: 10px;">Broly enfurecido</h2>
+    <p style="margin-bottom: 10px;"> Broly enfurecido pasa de estar perdiendo contra Vegeta a ser más fuerte que el en su forma god, como se puede ver en la película donde le gana con fuerza bruta a solas.</p>
+    <h2 style="margin-bottom: 10px;">Broly super sayan</h2>
+    <p style="margin-bottom: 10px;"> En esta fase se vuelve 50 veces de lo que ya era en su forma enfurecida, lo cual es increible considerando que esa forma era ya 10 veces más fuerte que su forma base y su forma base crece exponencialmente en fuerza cada vez que era superado (o pasaba el tiempo). En esta forma es capaz de derrotar fàcilmente a Goku y Vegeta juntos en su forma blue.</p>
+    <h2 style="margin-bottom: 10px;">Broly super sayan legendario</h2>
+    <p style="margin-bottom: 10px;"> Aunque es dificil de calcular que tan fuerte se vuelve, podemos asegurar que está a otro nivel por encima... o dos. Literalmente rompe una barrera dimenional y pelea en otra dimension por un tiempo con Gogeta</p>
+    <h2 style="margin-bottom: 10px;">Freezer</h2>
+    <p style="margin-bottom: 10px;"> Es mucho más fuerte de lo que la gente piensa. En su forma base fue capaz de soportar golpes de un broly Super Sayan varias veces. Solo con eso podemos concluir que esta a un nivel por encima de las formas base de goku y vegeta. Podrias incluso argumentar a Freezer base por encima de las fases god de Goku y Vegeta. Pero al tener solo esa informacion sobre el tampoco se puede saber muy seguro su poder.</p>
+    <h2 style="margin-bottom: 10px;">Golden Freezer</h2>
+    <p style="margin-bottom: 10px;"> No solo aguanto golpes de un Broly Super Sayan, sinó que le aguanto una hora seguida de pelea. Para hacer una comparación, Goku y Vegeta unidos en blue duraron màximo 1 minuto. </p>
+    <h2 style="margin-bottom: 10px;">Gogeta base</h2>
+    <p style="margin-bottom: 10px;"> La fusión de Goku y Vegeta, suficientemente fuerte como para visiblemente dañar a un Broly super sayan con relativa facilidad y esquivar todos sus ataques.</p>
+    <h2 style="margin-bottom: 10px;">Gogeta super sayan</h2>
+    <p style="margin-bottom: 10px;"> Su nivel de poder es simplemente absurdo, algunos incluso teorizan que superior al de Broly super sayan legendario.</p>
+    <h2 style="margin-bottom: 10px;">Gogeta blue</h2>
+    <p style="margin-bottom: 10px;"> Me sorprende que Broly puediera aguantar siquiera un golpe suyo, si no fuese por el deseo de Cheelai estaba muy muerto. Simplemente Gogeta blue está a otro nivel.</p>
+
+  </main>
+</body>
+<footer>
+  <section>
+    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+  </section>
+</footer>
+</html>

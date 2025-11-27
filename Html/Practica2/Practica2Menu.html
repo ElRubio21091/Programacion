@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 2</title>
+
+  <style>
+    /* --- Estilos dentro del HTML --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: fixed;
+      /* Se queda arriba aunque hagas scroll */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      /* 👈 separación entre los enlaces */
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    main {
+      margin-top: 120px;
+      /* Espacio para que el contenido no quede debajo del menú */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dragon Ball Super: Broly</h1>
+    <nav>
+      <a href="Practica2Menu.html">Inici</a>
+      <a href="Practica2Director.html">Director</a>
+      <a href="Practica2Personajes.html">Personajes</a>
+      <a href="Practica2CinemesStreaming.html">Cinemes/Streaming</a>
+      <a href="Practica2opinion.html">Opinion</a>
+      <a href="Practica2Media.html">Media</a>
+      <a href="Practica2NDP.html">Niveles de Poder</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="margin-bottom: 20px;">Dragon ball super: Broly</h1>
+    <h2 style="margin-bottom: 10px;">Descripción</h2>
+    <p style="margin-bottom: 10px;">En esta película, Goku y Vegeta se ven ante la amenaza de Broly, el sayan de las leyendas que, a
+      base de las mentiras de su padre y el malvado Freezer, se enfrenta a los guerreros de la tierra en un duro duelo.
+    </p>
+    <h2 style="margin-bottom: 10px;">Información</h2>
+      <!--Menu navegació-->
+    <ul>
+      <li style="margin-left: 10px;">Fecha de estreno: 14/12/2018</li>
+      <li style="margin-left: 10px;">Género: Acción</li>
+      <li style="margin-left: 10px;">Duración: 1h 40min</li>
+      <li style="margin-left: 10px;">País: Japón</li>
+    </ul>
+    <figure style="margin-top: 20px;">
+        <img src="./Dragon_Ball_Super_Broly_poster.webp" alt="Poster">
+        <figcaption> Poster de la película.</figcaption>
+    </figure>
+  </main>
+</body>
+<footer>
+  <section>
+    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+  </section>
+</footer>
+</html>

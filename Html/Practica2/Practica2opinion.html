@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 2</title>
+
+  <style>
+    /* --- Estilos dentro del HTML --- */
+    
+    body {
+      background-image: url('./elegante.jpeg'); /* Ruta de tu imagen */
+      background-size: cover;             /* La imagen cubre toda la pantalla */
+      background-repeat: no-repeat;       /* No se repite */
+      background-position: center center; /* Centrada */
+      background-attachment: fixed;       /* Efecto de fondo fijo al hacer scroll */
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    header {
+      position: fixed;
+      /* Se queda arriba aunque hagas scroll */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      /* 👈 separación entre los enlaces */
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      margin-top: 120px;
+      /* Espacio para que el contenido no quede debajo del menú */
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Dragon Ball Super: Broly</h1>
+    <nav>
+      <a href="Practica2Menu.html">Inici</a>
+      <a href="Practica2Director.html">Director</a>
+      <a href="Practica2Personajes.html">Personajes</a>
+      <a href="Practica2CinemesStreaming.html">Cinemes/Streaming</a>
+      <a href="Practica2opinion.html">Opinion</a>
+      <a href="Practica2Media.html">Media</a>
+      <a href="Practica2NDP.html">Niveles de Poder</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="color: aliceblue;">Formulario de la película</h1>
+    <form action="Practica2Menu.html" method="POST" id="formulari1">
+        <label style="background-color: aliceblue;" for="Nombre">Nombre:</label>
+        <input type="text" name="nombre" style="background-color: aliceblue;" placeholder="Nombre" /><br />
+        <label for="E-mail" style="background-color: aliceblue;">E-mail:</label>
+        <input type="text" style="background-color: aliceblue;" name="E-mail" placeholder="exemple@gmail.com" /><br/>
+        <label style="background-color: aliceblue;" >Personaje favorito:</label>
+        <select name="PersonajeFav">
+          <option style="background-color: aliceblue;" value="Gogeta">Gogeta</option>
+          <option style="background-color: aliceblue;" value="Broly">Broly</option>
+          <option style="background-color: aliceblue;" value="Goku">Goku</option>
+          <option style="background-color: aliceblue;" value="Vegeta">Vegeta</option>
+          <option style="background-color: aliceblue;" value="Freezer">Freezer</option>
+          <option style="background-color: aliceblue;" value="Cheelai">Cheelai</option>
+        </select>
+        <label style="background-color: aliceblue;" ><br/>Valoración:</label>
+        <select style="background-color: aliceblue;" name="valoracion">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        
+        <label style="background-color: aliceblue;" ><br/>Medio para verla: </label>
+        <select style="background-color: aliceblue;" name="MedioDeVer">
+          <option value="Crunchyroll">Crunchyroll</option>
+          <option value="Disney">Disney</option>
+          <option value="AmazonPrimeVideo">Amazon Prime Video</option>
+          <option value="AppleTV">Apple TV</option>
+          <option value="Netflix">Netflix</option>
+        </select>
+        <label style="background-color: aliceblue;" ><br/>Comentario personal: </label>
+        <textarea style="background-color: aliceblue;"name="comentario" placeholder="Escribe tu opinión sobre la película"></textarea >
+    </form>
+  </main>
+</body>
+<footer>
+  <section>
+    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+  </section>
+</footer>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica 2</title>
+
+  <style>
+    /* --- Estilos dentro del HTML --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      position: fixed;
+      /* Se queda arriba aunque hagas scroll */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header h2 {
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      /* 👈 separación entre los enlaces */
+      margin-top: 30px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      margin-top: 120px;
+      /* Espacio para que el contenido no quede debajo del menú */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Dragon Ball Super: Broly</h1>
+        <nav>
+            <a href="Practica2Menu.html"> Inici</a>
+            <a href="Practica2Director.html">Director</a>
+            <a href="Practica2Personajes.html">Personajes</a>
+            <a href="Practica2CinemesStreaming.html">Cinemes/Streaming</a>
+            <a href="Practica2opinion.html">Opinion</a>
+            <a href="Practica2Media.html">Media</a>
+            <a href="Practica2NDP.html">Niveles de Poder</a>
+        </nav>
+    </header>
+    <main>
+        <h2 style="margin-bottom: 20px;">Personajes</h2>
+        <figure style="margin-bottom: 20px;">
+            <img src="./gogeta.gif" alt="Gogeta">
+            <figcaption>Fusión de Goku y Vegeta, es el guerrero más fuerte de la película que resuelve el conflicto.
+            </figcaption>
+        </figure>
+        <figure style="margin-bottom: 20px;">
+            <img src="./goku.gif" alt="Goku">
+            <figcaption>Sayan criado en la tierra y principal protagonista de la serie, se enfrenta a Broly junto a
+                Vegeta para defender la Tierra.</figcaption>
+        </figure>
+        <figure style="margin-bottom: 20px;">
+            <img src="./vegeta.gif" alt="Vegeta">
+            <figcaption>Principe de los sayans y protagonista secundario, se enfrenta a Broly junto a Goku para defender
+                la Tierra.</figcaption>
+        </figure>
+        <figure style="margin-bottom: 20px;">
+            <img src="./broly.gif" alt="Broly">
+            <figcaption>Legendario super sayajin de dulze corazon que es enganyado para pelear contra los guerreros de
+                la Tierra.</figcaption>
+        </figure>
+        <figure style="margin-bottom: 20px;">
+            <img src="./freezer.gif" alt="Freezer">
+            <figcaption>Villano principal. Enganya a Broly y su padre para que se peleen contra los guerreros de la
+                Tierra con la intención de matar dos pajaros de un tiro.</figcaption>
+        </figure>
+        <figure style="margin-bottom: 20px;">
+            <img src="./cheelai.gif" alt="Cheelai">
+            <figcaption>Trabajadora de freezer que encuentra a Broly y su padre en un planeta abandonado. Esta se opone
+                al conflicto y forma una amistad con Broly.</figcaption>
+        </figure>
+    </main>
+</body>
+<footer>
+  <section>
+    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+  </section>
+</footer>
+</html>

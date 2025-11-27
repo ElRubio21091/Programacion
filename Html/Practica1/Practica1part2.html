@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./estils/estils.css" />
+</head>
+
+<body style="background-color: aliceblue;">
+    <main>
+        <section> <!--section del form-->
+            <h1>Blanes developers conference 2025</h1>
+            <form action="enviament.html" method="POST" id="formulari1">
+                <fieldset>
+                    <legend>Dades de l'usuari</legend>
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="Nom" placeholder="escriu el teu nom" /><br />
+                    <label for="cognom">Cognom:</label>
+                    <input type="text" name="Cognom" placeholder="escriu el teu cognom" /><br />
+                    <label for="NIF">NIF:</label>
+                    <input type="text" name="NIF" placeholder="NIF" /><br />
+                    <label for="Data">Data de neixement: </label>
+                    <input type="date" name="Data" placeholder="dd/mm/aaaa" /><br />
+                    <label for="fotografia">Fotografia: </label>
+                    <input type="file" name="fotografia" /><br />
+
+                    Sexe:
+                    <input type="radio" name="sexe" value="Home">
+                    <label for="home">Home</label>
+                    <input type="radio" name="sexe" value="Dona">
+                    <label for="dona">Dona</label>
+                    <input type="radio" name="sexe" value="Altres">
+                    <label for="altres">Altres</label><br>
+
+                    <label for="Adreza">Adreça:</label>
+                    <input type="text" name="Adreza" placeholder="Adreça" /><br />
+                    <label for="Telefon">Telefon:</label>
+                    <input type="text" name="Telefon" placeholder="Telefon" /><br />
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text" name="E-mail" placeholder="exemple@gmail.com" /><br /><br />
+
+                    <legend>Quins llenguatges domines?</legend>
+                    <input type="checkbox" name="llenguatge" value="Java"> Java
+                    <input type="checkbox" name="llenguatge" value="PHP"> PHP
+                    <input type="checkbox" name="llenguatge" value="JavaScript"> JavaScript
+                    <input type="checkbox" name="llenguatge" value="C++"> C++
+                    <input type="checkbox" name="llenguatge" value="C#"> C#
+
+                    <legend  ><br /> Ets estudiant?</legend>
+                    <input type="radio" name="estudiant" value="si">
+                    <label for="si">Sí</label>
+                    <input type="radio" name="estudiant" value="no" checked>
+                    <label for="no">No</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Selecciona on vols inscriure't</legend>
+                    <table border="1">
+                        <tr>
+                            <th>HORA</th>
+                            <th>Dilluns</th>
+                            <th>Dimarts</th>
+                            <th>Dimecres</th>
+                            <th>Dijous</th>
+                            <th>Divendres</th>
+                        </tr>
+                        <tr>
+                            <td>8:30 - 10:30</td>
+                            <td><select name="dl1">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dm1">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dx1">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dj1">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dv1">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>10:30 - 13:30</td>
+                            <td><select name="dl2">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dm2">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dx2">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dj2">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dv2">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                        </tr>
+                        <tr>
+                            <td>14:00 - 16:00</td>
+                            <td><select name="dl3">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dm3">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dx3">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dj3">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                            <td><select name="dv3">
+                                    <option>backend</option>
+                                    <option>frontend</option>
+                                    <option>fullstack</option>
+                                </select></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" name="enviar"><br />
+                    <input type="reset" name="esborrar"><br />
+                </fieldset>
+                
+            </form>
+        </section>
+        <p>Per tornar enrere clica <a href="Practica1.html">aquí</a></p>
+    </main>
+</body>
+</html>
