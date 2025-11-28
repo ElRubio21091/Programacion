@@ -18,8 +18,8 @@ arrayPM=arrayPM.split(",")
 let arrayHP=prompt("Donam 4 hobbies que t'agradin separats per comes")
 arrayHP=arrayHP.split(",")
 */
-arrayPM=["Poma","Pera","Xocolata","Pastís","Entrepans","Pizza"];
-arrayHP=["Llegir","Videojocs"]
+let arrayPM=["Poma","Pera","Xocolata","Pastís","Entrepans","Pizza"];
+let arrayHP=["Llegir","Videojocs","Dormir"]
 const arr = [];
 for (let i = 0; i < FILAS; i++) {
     if (i == 0) {
