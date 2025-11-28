@@ -21,7 +21,7 @@ Repeteix els passos anteriors però amb la diagonal major inversa.
 */
 
 
-let dimensions=prompt("Donam les dimensions del quadrat")
+let dimensions=parseInt(prompt("Donam les dimensions del quadrat"))
 
 const arr = [];
 for (let i = 0; i < dimensions; i++) {
@@ -32,11 +32,102 @@ for (let i = 0; i < dimensions; i++) {
 }
 console.table(arr);
 
+let comptadorM=0;
+let comptadorm=0;
+let comptadorTS=0;
+let comptadorTI=0;
 const arr2 = [];
 for (let i = 0; i < dimensions; i++) {
     arr2[i] = [];
     for (let j = 0; j < dimensions; j++) {   
-        arr2[i][j] = Math.abs(i-j)+1; 
+        arr2[i][j] = Math.abs(i-j)+1;
+        if (i==j){
+            comptadorM=comptadorM+arr2[i][j];
+        } 
+        if ((i+j)==(dimensions-1)){
+            comptadorm=comptadorm+arr2[i][j];
+        } 
+        if (i>j){
+            comptadorTS=comptadorTS+arr2[i][j];
+        } 
+        if (i<j){
+            comptadorTI=comptadorTI+arr2[i][j];
+        } 
+
     }
 }
 console.table(arr2);
+console.log("Suma diagonal major: "+comptadorM)
+console.log("Suma diagonal major inversa: "+comptadorm)
+console.log("Suma triangle superior: "+comptadorTS)
+console.log("Suma triangle inferior: "+comptadorTI)
+
+const arr3= [];
+for (let i = 0; i < dimensions; i++) {
+    arr3[i] = [];
+    for (let j = 0; j < dimensions; j++) {   
+        arr3[i][j] = Math.abs(i-j)+1;
+        if (i>j){
+            arr3[i][j]=0;
+        } 
+        if (i<j){
+            arr3[i][j]=0;
+        } 
+
+    }
+}
+console.table(arr3);
+
+comptadorM=0;
+comptadorm=0;
+comptadorTS=0;
+comptadorTI=0;
+const arr4 = [];
+for (let i = 0; i < dimensions; i++) {
+    arr4[i] = [];
+    for (let j = 0; j < dimensions; j++) {
+        if (i+j>=dimensions){
+            arr4[i][j] = Math.abs(dimensions-(i+1+j+1));
+        }
+        if (i+j<dimensions){
+            arr4[i][j] = Math.abs(dimensions-(i+j));
+        }
+        if (i==j){
+            comptadorm=comptadorm+arr4[i][j];
+        } 
+        if ((i+j)==(dimensions-1)){
+            comptadorM=comptadorM+arr4[i][j];
+        } 
+        if (i+j>dimensions-1){
+            comptadorTI=comptadorTI+arr4[i][j];
+        } 
+        if (i+j<dimensions-1){
+            comptadorTS=comptadorTS+arr4[i][j];
+        } 
+
+    }
+}
+console.table(arr4);
+console.log("Suma diagonal major: "+comptadorM)
+console.log("Suma diagonal major inversa: "+comptadorm)
+console.log("Suma triangle superior: "+comptadorTS)
+console.log("Suma triangle inferior: "+comptadorTI)
+
+
+const arr5= [];
+for (let i = 0; i < dimensions; i++) {
+    arr5[i] = [];
+    for (let j = 0; j < dimensions; j++) {   
+        if (i+j>=dimensions){
+            arr5[i][j] = Math.abs(dimensions-(i+1+j+1));
+        }
+        if (i+j<dimensions){
+            arr5[i][j] = Math.abs(dimensions-(i+j));
+        }
+        if (i+j!=dimensions-1){
+            arr5[i][j]=0
+        }
+
+    }
+}
+console.table(arr5)
