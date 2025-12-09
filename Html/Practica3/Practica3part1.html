@@ -1,0 +1,129 @@
+<html>
+<head>
+<style>
+
+.outside{
+    width:900px;
+    border:5px solid #000;
+    border-radius:5px;
+    margin:10px;
+    padding:5px;
+
+    display:flex;          /* <<< alineamos aside + wrapper */
+}
+
+.aside{
+    
+    width:150px;
+    height:500px;
+    border:5px solid #000;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.wrapper{
+    flex:1;
+    border:5px solid #000;
+    border-radius:5px;
+    background:lightblue;
+    padding:10px;
+}
+
+.header{
+    margin-right: 50px;
+    margin-left: 50px;
+    height:100px;
+    background:gray;
+    border:5px solid #000;
+    border-radius:5px;
+    margin-bottom:10px;
+    position:relative;
+}
+
+.offer{
+    width:60px;
+    height:25px;
+    background:red;
+    border:5px solid #000;
+    border-radius:5px;
+    position:absolute;
+    top:-15px;       /* flota como en la imagen */
+    left:-20px;
+}
+
+.nav + .content {
+    margin-left:190px;   /* deja espacio a la nav */
+}
+
+/* NAV */
+.nav{
+    width:150px;
+    background:purple;
+    border:5px solid #000;
+    border-radius:5px;
+    float:left;
+    margin-right:10px;
+}
+
+/* CONTENT */
+.content{
+    background:yellow;
+    border:5px solid #000;
+    border-radius:5px;
+    padding:10px;
+    overflow:auto;
+}
+
+/* FOOTER */
+.footer{
+    margin-right: 50px;
+    margin-left: 50px;
+    height:100px;
+    background:green;
+    border:5px solid #000;
+    border-radius:5px;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="outside">
+
+    <div class="aside">wleft</div>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="offer">oferta</div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>inici</li>
+                <li>serveis</li>
+                <li>tarifes</li>
+                <li>contacte</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac nunc ipsum. Aliquam massa nisi, eleifend quis imperdiet non, blandit in eros. Duis molestie, mi ut adipiscing eleifend, lorem erat luctus erat, non molestie sem eros ac felis. Suspendisse potenti. Nunc laoreet nulla nec eros rhoncus malesuada. Vivamus dictum commodo enim at placerat. Suspendisse id lacus egestas quam ultricies convallis.
+
+Quisque ut tortor vitae ante volutpat accumsan. Maecenas eleifend tempor elit in cursus. Donec eu libero eu mauris malesuada tempor. Nullam iaculis commodo vehicula. Nunc rhoncus ligula et massa consectetur vel tempor erat aliquet. Quisque porttitor, justo vel commodo condimentum, justo ligula malesuada nunc, vel fermentum velit sem eget nulla. Sed vulputate gravida lorem, ac faucibus justo suscipit eu. Vivamus mattis mauris nec leo placerat malesuada.
+
+Vestibulum luctus facilisis mauris, quis interdum nibh varius at. Maecenas consectetur lectus a mi hendrerit at pharetra elit semper. Morbi rhoncus massa non sem condimentum fringilla ut id felis. Nunc vel elit nisi, eu dictum lectus. In blandit eros ac ligula dapibus gravida rhoncus dui consequat. Donec at euismod augue. Nulla aliquam sollicitudin quam nec luctus.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+        </div>
+
+        <div class="footer">peu</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

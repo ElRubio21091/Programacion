@@ -1,19 +1,19 @@
 "use strict"
 
-let arrayPalabras = ["Matikanefukukitaru", "AgnesTachyon", "MejiroRyan", "WinningTiquet", "SakuraBakushin", 
-    "HaruUrara", "MatikaneFukutitaru", "NiceNature", "KingHalo", "GoldShip", "SuperCrek", "MayanoTopGun", 
-    "AirGroove", "ElCondorPasa", "GrassWonder", "DaiwaScarlett", "Vodka", "MeishoDoto", "Marusenky", 
-    "SpecialWeek", "GoldCity", "FujiKiseki", "HishiAmazon", "SeiunSky", "NaritaBrian", "SmartFalcon", 
-    "NaritaTaishin", "CurrenChan", "TokaiTeio", "MejiroMCQueen", "BiwaHayahide", "MihonoBourbon", 
+let arrayPalabras = ["Matikanefukukitaru", "AgnesTachyon", "MejiroRyan", "WinningTiquet", "SakuraBakushin",
+    "HaruUrara", "MatikaneFukutitaru", "NiceNature", "KingHalo", "GoldShip", "SuperCrek", "MayanoTopGun",
+    "AirGroove", "ElCondorPasa", "GrassWonder", "DaiwaScarlett", "Vodka", "MeishoDoto", "Marusenky",
+    "SpecialWeek", "GoldCity", "FujiKiseki", "HishiAmazon", "SeiunSky", "NaritaBrian", "SmartFalcon",
+    "NaritaTaishin", "CurrenChan", "TokaiTeio", "MejiroMCQueen", "BiwaHayahide", "MihonoBourbon",
     "TmOperaO", "RiceShower", "SymboliRudolf", "TaikiShuttle", "OguriCap", "SilenceSuzuka"]
-    
+
 let palabra = ""
 let intents = 10;
 let lletresdites = "";
 let primerTurn = true;
 let paraulaPerEsbrinarr = ""
-
-
+let bingo = false
+let comptador = 0
 
 joc();
 
@@ -57,10 +57,26 @@ function joc() {
             lletresdites = lletresdites + lletra + ", "
             for (let i = 0; i < paraulaPerEsbrinarr.length; i++) {
                 if (palabra[i] == lletra) {
+                    bingo = true
                     paraulaPerEsbrinarr = paraulaPerEsbrinarr.slice(0, i) + lletra + paraulaPerEsbrinarr.slice(i + 1);
                 }
             }
-            intents = intents - 1
+            if (bingo == false) {
+                comptador++
+                if (comptador == 1) { console.log(" | ") }
+                if (comptador == 2) { console.log(" | \n O ") }
+                if (comptador == 3) { console.log(" | \n_O") }
+                if (comptador == 4) { console.log(" | \n_O_") }
+                if (comptador == 5) { console.log(" | \n_O_\n | ") }
+                if (comptador == 6) { console.log(" | \n_O_\n | \n/") }
+                if (comptador == 7) { 
+                    console.log(" | \n_O_\n | \n/ \\")
+                    alert("Has perdut")
+                    return
+                }
+            }
         }
+        bingo=false
+        intents = intents - 1
     }
 }

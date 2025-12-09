@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Responsive</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #333;
+        color: white;
+    }
+
+    
+    header {
+        background: #2d2d2d;
+        padding: 15px 20px;
+    }
+
+    header h1 {
+        font-size: 45px;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+
+    nav.menu {
+        background: #bebebe;
+        padding: 10px 15px;
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    nav.menu a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    
+    .layout {
+        display: flex;
+        padding: 15px;
+        gap: 15px;
+        background: #2d2d2d;
+    }
+
+    .left, .right {
+        width: 160px;
+        background: #e7e6f3;
+        color: #444;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    main {
+        flex: 1;
+        background: #ecebfb;
+        color: black;
+        border-radius: 8px;
+    }
+
+    .title {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .subtitle {
+        background: #1e1e1e;
+        color: white;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        padding: 20px;
+        background: #d5d5dd;
+        border-bottom: 15px solid #ecebfb;
+    }
+
+    
+    .contenedor img {
+        flex: 1 1 180px;     
+        max-width: 200px;    
+        width: 100%;
+        border: 2px dashed #b5b5b5;
+        border-radius: 5px;
+        background: white;
+    }
+
+    
+    footer {
+        margin-top: 15px;
+        background: #2d2d2d;
+        padding: 25px 20px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    /* Tablet: reduce tamaño de los laterales */
+    @media (max-width: 1024px) {
+        .left, .right {
+            width: 130px;
+        }
+    }
+
+    /* Móvil horizontal / pequeño */
+    @meddia (max-width: 850px) {
+        .layout {
+            flex-direction: column;
+        }
+
+        .left, .right {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* Móvil vertical */
+    @media (max-width: 600px) {
+
+        header h1 {
+            font-size: 35px;
+        }
+
+        nav.menu {
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .contenedor img {
+            flex: 1 1 45%;  
+            max-width: 180px;
+        }
+
+        footer {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Flexbox</h1>
+    <nav class="menu">
+        <a href="#">Flex</a>
+        <a href="#">Flex2</a>
+        <a href="#">Flex3</a>
+        <a href="#">Flex4</a>
+    </nav>
+</header>
+
+<div class="layout">
+
+    <aside class="left">nav</aside>
+
+    <main>
+
+        <div class="title">hola</div>
+
+        <div class="subtitle">flex-wrap: no wrap</div>
+        <div class="contenedor nowrap">
+            <img src="img1.svg">
+            <img src="img2.svg">
+            <img src="img3.svg">
+            <img src="img4.svg">
+        </div>
+
+        <div class="subtitle">flex-wrap: wrap</div>
+        <div class="contenedor wrap">
+            <img src="img1.svg">
+            <img src="img2.svg">
+            <img src="img3.svg">
+            <img src="img4.svg">
+            <img src="img5.svg">
+            <img src="img6.svg">
+        </div>
+
+    </main>
+
+    <aside class="right">aside</aside>
+
+</div>
+
+<footer>footer</footer>
+
+</body>
+</html>
