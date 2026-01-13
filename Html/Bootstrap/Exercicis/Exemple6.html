@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap 5</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+	
+		<div class="row mt-4">
+			<div class="col">
+				<div class="accordion accordion-flush" id="temari">
+			
+					<div class="accordion-item"> 
+						<h2 class="accordion-header" id="encapçalat-1">
+						<button 
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#element-1" 
+								aria-expanded="true"
+								aria-controles="element-1"
+							>
+								Capítol #1
+							</button>
+						</h2>
+		
+
+						<div
+							id="element-1"
+							class="accordion-collapse collapse show" 
+							aria-labelledby="encapçalat-1"
+							data-bs-parent="#temari"  
+						>
+						
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+
+			
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="encapçalat-2">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#element-2"
+								aria-expanded="true"
+								aria-controles="element-2"
+							>
+								Capítol #2
+							</button>
+						</h2>
+
+						<div
+							id="element-2"
+							class="accordion-collapse collapse"
+							aria-labelledby="encapçalat-2"
+							data-bs-parent="#temari"
+						>
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+<div class="accordion-item">
+						<h2 class="accordion-header" id="encapçalat-3">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#element-3"
+								aria-expanded="true"
+								aria-controles="element-3"
+							>
+								Capítol #3
+							</button>
+						</h2>
+
+						<div
+							id="element-3"
+							class="accordion-collapse collapse"
+							aria-labelledby="encapçalat-3"
+							data-bs-parent="#temari"
+						>
+							<div class="accordion-body">
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

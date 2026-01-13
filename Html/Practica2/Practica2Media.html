@@ -6,69 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Práctica 2</title>
 
+  <!-- Fuente externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estils/P2Media.css">
   <style>
-    /* --- Estilos dentro del HTML --- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    header {
-      position: fixed;
-      /* Se queda arriba aunque hagas scroll */
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    header h2 {
-      margin-bottom: 10px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      /* 👈 separación entre los enlaces */
-      margin-top: 30px;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    main {
-      margin-top: 120px;
-      /* Espacio para que el contenido no quede debajo del menú */
-      padding: 20px;
-    }
   </style>
 </head>
 
 <body>
+
   <header>
     <h1>Dragon Ball Super: Broly</h1>
     <nav>
@@ -83,28 +30,36 @@
   </header>
 
   <main>
-    <a href="https://youtu.be/9ll5zb-264w?si=g-Sk_VS3_SVnNaTr">Trailer de la película</a>
-    <figure style="margin-top: 20px;">
-        <img src="./Dragon_Ball_Super_Broly_poster.webp" alt="Poster">
-        <figcaption> Poster de la película.</figcaption>
+    <a href="https://youtu.be/9ll5zb-264w?si=g-Sk_VS3_SVnNaTr" target="_blank">
+      ▶ Trailer de la película
+    </a>
+
+    <figure>
+      <img src="./imatges//Dragon_Ball_Super_Broly_poster.webp" alt="Poster">
+      <figcaption>Poster de la película.</figcaption>
     </figure>
-    <figure style="margin-top: 20px;">
-        <img src="./poster2.jpg" alt="Poster inglés">
-        <figcaption> Poster de la película en inglés.</figcaption>
+
+    <figure>
+      <img src="./imatges//poster2.jpg" alt="Poster inglés">
+      <figcaption>Poster de la película en inglés.</figcaption>
     </figure>
-    <figure style="margin-top: 20px;">
-        <img src="./manga2.webp" alt="Adaptacion de la película al manga">
-        <figcaption> Adaptacion de la película al manga.</figcaption>
+
+    <figure>
+      <img src="./imatges//manga2.webp" alt="Adaptacion de la película al manga">
+      <figcaption>Adaptación de la película al manga.</figcaption>
     </figure>
-    <figure style="margin-top: 20px;">
-        <img src="./manga.jpg" alt="arte">
-        <figcaption> Arte de la película de Akira Toriyama.</figcaption>
+
+    <figure>
+      <img src="./imatges/manga.jpg" alt="arte">
+      <figcaption>Arte de la película de Akira Toriyama.</figcaption>
     </figure>
   </main>
+
+  <footer>
+    <section>
+      <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+    </section>
+  </footer>
+
 </body>
-<footer>
-  <section>
-    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
-  </section>
-</footer>
 </html>

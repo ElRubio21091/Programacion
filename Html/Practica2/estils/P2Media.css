@@ -1,0 +1,109 @@
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #111, #2b2b2b);
+      color: white;
+    }
+
+    /* HEADER */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      text-align: center;
+      padding: 15px 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      margin-bottom: 15px;
+    }
+
+    /* NAV FLEXBOX */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: black;
+    }
+
+    /* MAIN */
+    main {
+      margin-top: 150px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    main a {
+      color: #ffcc00;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    main a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* GALERÍA CON FLEXBOX */
+    figure {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    figure img:hover {
+      transform: scale(1.05);
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    /* FOOTER */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }

@@ -4,117 +4,25 @@ let moviments = 0
 let joc = true
 let canvi = false
 let TableroJugador = [["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],
-["", "", "", "", "", "", "", ""],]
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],
+                      ["", "", "", "", "", "", "", ""],]
 
-const Tablero = crearTablero();
+const Tablero= [["B", "A", "A", "A", "A", "A", "A", "B"],
+                ["B", "A", "A", "A", "A", "A", "B", "B"],
+                ["B", "A", "B", "A", "B", "A", "B", "A"],
+                ["B", "A", "A", "A", "A", "A", "A", "B"],
+                ["A", "A", "A", "B", "A", "A", "A", "B"],
+                ["A", "B", "A", "A", "A", "A", "A", "A"],
+                ["A", "A", "A", "A", "A", "B", "B", "B"],
+                ["A", "B", "B", "B", "A", "A", "A", "A"],]
+
 console.log(Tablero.map(r => r.join(" ")).join("\n"));
 
-function crearTablero() {
-  const N = 8;
-  // Representación interna: 0 = vacío, 1 = barco
-  function nuevoGrid() {
-    return Array.from({ length: N }, () => Array(N).fill(0));
-  }
-
-  const configuracion = [
-    { cantidad: 1, tamaño: 4 },
-    { cantidad: 2, tamaño: 3 },
-    { cantidad: 3, tamaño: 2 },
-    { cantidad: 4, tamaño: 1 }
-  ];
-
-  // Comprueba si dentro del bounding box extendido alrededor del barco ya existe un barco (1).
-  // r,c = inicio; tamaño = longitud; horiz = horizontal (true) o vertical (false)
-  function puedeColocar(grid, r, c, tamaño, horiz) {
-    // calcular bounding box (filas desde rmin hasta rmax, columnas cmin..cmax)
-    let rmin = r - 1;
-    let cmin = c - 1;
-    let rmax = horiz ? r + 1 : r + tamaño; // si horizontal, filas r-1..r+1; si vertical, r-1..r+tamaño
-    let cmax = horiz ? c + tamaño : c + 1; // si horizontal, cols c-1..c+tamaño; si vertical, c-1..c+1
-
-    // recortar a límites del tablero
-    rmin = Math.max(0, rmin);
-    cmin = Math.max(0, cmin);
-    rmax = Math.min(N - 1, rmax);
-    cmax = Math.min(N - 1, cmax);
-
-    // verificar que las celdas del propio barco están dentro y libres
-    for (let i = 0; i < tamaño; i++) {
-      const rr = r + (horiz ? 0 : i);
-      const cc = c + (horiz ? i : 0);
-      if (rr < 0 || rr >= N || cc < 0 || cc >= N) return false; // fuera del tablero
-    }
-
-    // verificar que no hay ningún '1' en toda la caja
-    for (let rr = rmin; rr <= rmax; rr++) {
-      for (let cc = cmin; cc <= cmax; cc++) {
-        if (grid[rr][cc] === 1) return false;
-      }
-    }
-
-    return true;
-  }
-
-  function colocar(grid, r, c, tamaño, horiz) {
-    for (let i = 0; i < tamaño; i++) {
-      const rr = r + (horiz ? 0 : i);
-      const cc = c + (horiz ? i : 0);
-      grid[rr][cc] = 1;
-    }
-  }
-
-  // Intentar generar tablero; si se atasca (muchos intentos) reiniciamos todo
-  const MAX_RESTARTS = 100;
-  for (let restart = 0; restart < MAX_RESTARTS; restart++) {
-    const grid = nuevoGrid();
-    let ok = true;
-
-    for (const { cantidad, tamaño } of configuracion) {
-      for (let k = 0; k < cantidad; k++) {
-        let placed = false;
-        let attempts = 0;
-        const MAX_ATTEMPTS_PER_SHIP = 1000;
-
-        while (!placed && attempts < MAX_ATTEMPTS_PER_SHIP) {
-          attempts++;
-          const horiz = Math.random() < 0.5;
-          const r = Math.floor(Math.random() * N);
-          const c = Math.floor(Math.random() * N);
-
-          if (puedeColocar(grid, r, c, tamaño, horiz)) {
-            colocar(grid, r, c, tamaño, horiz);
-            placed = true;
-            break;
-          }
-        }
-
-        if (!placed) {
-          // no hemos podido colocar este barco -> reiniciar toda la generación
-          ok = false;
-          break;
-        }
-      }
-      if (!ok) break;
-    }
-
-    if (ok) {
-      // convertir 0 -> "A" y 1 -> "B" y devolver
-      return grid.map(row => row.map(cell => (cell === 1 ? "B" : "A")));
-    }
-    // si no ok, continúa con un nuevo restart
-  }
-
-  // Si tras MAX_RESTARTS no se ha podido generar (extremadamente improbable), lanzar error
-  throw new Error("No se pudo generar un tablero válido tras varios intentos. Vuelve a ejecutar.");
-}
-
-// Ejemplo de uso:
 
 
 

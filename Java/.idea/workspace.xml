@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b90f8f03-b2cc-4705-91c9-4e9f404102bc" name="Changes" comment="" />
+    <list default="true" id="b90f8f03-b2cc-4705-91c9-4e9f404102bc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/AER124.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/AER158.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/AER217.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/AER576.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/Programacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/AER217.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/AER576.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercici576y217/out/production/Programacion/Programacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/Exercicis/Arrays2d/HundirLaFlotaAuto.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaScript/Exercicis/Arrays2d/HundirLaFlotaAuto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/Exercicis/Arrays2d/TresEnRalla.js" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaScript/Exercicis/Arrays2d/TresEnRalla.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaScript/Exercicis/jocs/Biblioteca.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +36,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -25,15 +47,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Raul/Desktop/Programacion/Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Raul/Desktop/Programacion/Java&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b90f8f03-b2cc-4705-91c9-4e9f404102bc" name="Changes" comment="" />

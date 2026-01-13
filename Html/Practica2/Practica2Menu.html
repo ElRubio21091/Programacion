@@ -6,69 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Práctica 2</title>
 
+  <!-- Fuente externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./estils/MenuP2.css"
   <style>
-    /* --- Estilos dentro del HTML --- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    header {
-      position: fixed;
-      /* Se queda arriba aunque hagas scroll */
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    header h2 {
-      margin-bottom: 10px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      /* 👈 separación entre los enlaces */
-      margin-top: 30px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    main {
-      margin-top: 120px;
-      /* Espacio para que el contenido no quede debajo del menú */
-      padding: 20px;
-    }
   </style>
 </head>
 
 <body>
+
   <header>
     <h1>Dragon Ball Super: Broly</h1>
     <nav>
@@ -83,28 +30,34 @@
   </header>
 
   <main>
-    <h1 style="margin-bottom: 20px;">Dragon ball super: Broly</h1>
-    <h2 style="margin-bottom: 10px;">Descripción</h2>
-    <p style="margin-bottom: 10px;">En esta película, Goku y Vegeta se ven ante la amenaza de Broly, el sayan de las leyendas que, a
-      base de las mentiras de su padre y el malvado Freezer, se enfrenta a los guerreros de la tierra en un duro duelo.
+    <h1>Dragon Ball Super: Broly</h1>
+
+    <h2>Descripción</h2>
+    <p>
+      En esta película, Goku y Vegeta se ven ante la amenaza de Broly, el saiyan de las
+      leyendas que, a base de las mentiras de su padre y el malvado Freezer, se enfrenta
+      a los guerreros de la Tierra en un duro duelo.
     </p>
-    <h2 style="margin-bottom: 10px;">Información</h2>
-      <!--Menu navegació-->
+
+    <h2>Información</h2>
     <ul>
-      <li style="margin-left: 10px;">Fecha de estreno: 14/12/2018</li>
-      <li style="margin-left: 10px;">Género: Acción</li>
-      <li style="margin-left: 10px;">Duración: 1h 40min</li>
-      <li style="margin-left: 10px;">País: Japón</li>
+      <li>Fecha de estreno: 14/12/2018</li>
+      <li>Género: Acción</li>
+      <li>Duración: 1h 40min</li>
+      <li>País: Japón</li>
     </ul>
-    <figure style="margin-top: 20px;">
-        <img src="./Dragon_Ball_Super_Broly_poster.webp" alt="Poster">
-        <figcaption> Poster de la película.</figcaption>
+
+    <figure>
+      <img src="./imatges//Dragon_Ball_Super_Broly_poster.webp" alt="Poster">
+      <figcaption>Poster de la película.</figcaption>
     </figure>
   </main>
+
+  <footer>
+    <section>
+      <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+    </section>
+  </footer>
+
 </body>
-<footer>
-  <section>
-    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
-  </section>
-</footer>
 </html>

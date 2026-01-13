@@ -2,13 +2,13 @@
 
 //Fes un programa que vagi demanant notes dels alumnes entre 1 i 10.
 //Quan l'usuari introdueixi el 0, ha de finalitzar el bucle i mostrar quants han suspès i calcular la mitjana amb un decimal.
-let notes=parseFloat(0);
+let notes=0;
 let totalNotes=0;
 let mitjana=0;
 let suspes=0;
 let nota=0;
 let i=1;
-while (i==!0)
+while (i!=0)
 {
     nota=parseFloat(prompt("Introdueix una nota del 1 al 10 (0 per acabar): "))
     if (isNaN(nota)==true)

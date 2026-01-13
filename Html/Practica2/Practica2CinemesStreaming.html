@@ -4,99 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Práctica 2</title>
+  <title>Práctica 2 - Cinemas/Streaming</title>
 
-  <style>
-    /* --- Estilos dentro del HTML --- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <!-- Fuente externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    header {
-      position: fixed;
-      /* Se queda arriba aunque hagas scroll */
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    header h2 {
-      margin-bottom: 10px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      /* 👈 separación entre los enlaces */
-      margin-top: 30px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    main {
-      margin-top: 120px;
-      /* Espacio para que el contenido no quede debajo del menú */
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th,
-    td {
-      border: 1px solid #333;
-      padding: 10px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #444;
-      color: white;
-    }
-
-    td a {
-      color: #0066ff;
-      text-decoration: none;
-    }
-
-    td a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="./estils/cssCinemesStreaming.css">
 </head>
 
 <body>
+
   <header>
     <h1>Dragon Ball Super: Broly</h1>
     <nav>
@@ -109,8 +27,9 @@
       <a href="Practica2NDP.html">Niveles de Poder</a>
     </nav>
   </header>
+
   <main>
-    <table border="1">
+    <table>
       <thead>
         <tr>
           <th>Plataforma</th>
@@ -130,23 +49,19 @@
           <td>Crunchyroll</td>
           <td>7.7/10</td>
           <td>Incluido en suscripción</td>
-          <td><a href="https://www.crunchyroll.com/es-es/watch/G14U4G717/dragon-ball-super-broly">Ver en
-              Crunchyroll</a></td>
+          <td><a href="https://www.crunchyroll.com/es-es/watch/G14U4G717/dragon-ball-super-broly">Ver en Crunchyroll</a></td>
         </tr>
         <tr>
           <td>Amazon Prime Video</td>
           <td>7.7/10</td>
           <td>Alquiler desde 3,99 €</td>
-          <td><a
-              href="https://www.amazon.es/Dragon-Ball-Super-Broly-Pel%C3%ADculas-TV/s?k=Dragon+Ball+Super%3A+Broly&rh=n%3A599379031">Ver
-              en Amazon</a></td>
+          <td><a href="https://www.amazon.es/Dragon-Ball-Super-Broly-Pel%C3%ADculas-TV/s?k=Dragon+Ball+Super%3A+Broly&rh=n%3A599379031">Ver en Amazon</a></td>
         </tr>
         <tr>
           <td>Apple TV</td>
           <td>7.7/10</td>
           <td>Alquiler desde 4,99 €</td>
-          <td><a href="https://tv.apple.com/es/movie/dragon-ball-super-broly/umc.cmc.2lsyxsfjpmh3lgjmnrke6vuvq">Ver
-              en Apple TV</a></td>
+          <td><a href="https://tv.apple.com/es/movie/dragon-ball-super-broly/umc.cmc.2lsyxsfjpmh3lgjmnrke6vuvq">Ver en Apple TV</a></td>
         </tr>
         <tr>
           <td>Netflix</td>
@@ -157,10 +72,12 @@
       </tbody>
     </table>
   </main>
+
+  <footer>
+    <section>
+      <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
+    </section>
+  </footer>
+
 </body>
-<footer>
-  <section>
-    <p>Todo lo utilizado en este apartado es libre de derechos de autor</p>
-  </section>
-</footer>
 </html>
